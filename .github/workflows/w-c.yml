@@ -5,11 +5,11 @@ on:
 
 jobs:
   containers:
-      name: gcc
+      name: win-latest
       runs-on: windows-latest
       container:
         image: windows/insider:latest
       steps:
-      - name: Show win version
-        run:  [System.Environment]::OSVersion.Version
+      - run: [System.Environment]::OSVersion.Version
         shell: powershell
+
