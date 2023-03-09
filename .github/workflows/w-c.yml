@@ -1,0 +1,15 @@
+name: windows
+
+on:
+  push:
+
+jobs:
+  containers:
+      name: gcc
+      runs-on: windows-latest
+      container:
+        image: windows/insider:latest
+      steps:
+      - name: Show win version
+        run:  [System.Environment]::OSVersion.Version
+        shell: powershell
