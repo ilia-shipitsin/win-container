@@ -10,6 +10,6 @@ jobs:
       container:
         image: windows/insider:latest
       steps:
-      - run: [System.Environment]::OSVersion.Version
+      - run: '[System.Environment]::OSVersion.Version'
         shell: powershell
 
